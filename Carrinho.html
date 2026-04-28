@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho | Ip - Trans</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="elemento.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+    
+</head>
+<body>
+
+    <!-- NAVBAR (igual ao index) -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="FavIcon.png" alt="Logo" class="navbar-logo">
+                Ip - Trans
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Casa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#produtos">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contactos.html">Contato</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link active position-relative" href="carrinho.html" style="font-weight:700;">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-badge" style="
+                                position:absolute; top:-6px; right:-10px;
+                                background:#ff6b6b; color:white;
+                                font-size:0.7rem; font-weight:700;
+                                width:18px; height:18px; border-radius:50%;
+                                display:none; align-items:center; justify-content:center;
+                            ">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-hero px-3 ms-lg-2" href="Login.html"
+                           style="animation:none; padding:0.5rem 1.5rem;">Entrar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="cart-hero">
+        <div class="container">
+            <h1><i class="fas fa-shopping-bag me-2"></i>O Meu Carrinho</h1>
+            <p>Reveja os seus artigos antes de finalizar a compra</p>
+        </div>
+    </section>
+
+    <!-- SECÇÃO PRINCIPAL -->
+    <section class="cart-section">
+        <div class="container">
+
+            <!-- Breadcrumb -->
+            <nav class="cart-breadcrumb">
+                <a href="index.html">Casa</a>
+                <span>/</span>
+                <a href="index.html#produtos">Produtos</a>
+                <span>/</span>
+                <strong>Carrinho</strong>
+            </nav>
+
+            <div class="cart-grid mt-3">
+
+                <!-- Coluna da esquerda: itens -->
+                <div>
+                    <div class="cart-panel">
+                        <div class="cart-panel-header">
+                            <h2><i class="fas fa-list me-2 text-primary"></i>Artigos no Carrinho</h2>
+                            <button class="btn-clear-cart" onclick="clearCart()">
+                                <i class="fas fa-trash me-1"></i>Esvaziar
+                            </button>
+                        </div>
+                        <div id="cart-items-container">
+                            <!-- Preenchido pelo carrinho.js -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna da direita: resumo -->
+                <div id="cart-summary">
+                    <div class="cart-summary-card">
+                        <h3><i class="fas fa-receipt me-2"></i>Resumo do Pedido</h3>
+
+                        <div class="summary-row">
+                            <span class="label">Subtotal</span>
+                            <span class="value" id="summary-subtotal">€ 0,00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="label">Envio</span>
+                            <span class="value" id="summary-shipping">€ 3,99</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span class="label">Total</span>
+                            <span class="value" id="summary-total">€ 0,00</span>
+                        </div>
+
+                        <p class="shipping-note mt-3" id="shipping-note">
+                            <i class="fas fa-truck"></i> Portes grátis a partir de € 15,00!
+                        </p>
+
+                        <button class="btn-checkout mt-3">
+                            <i class="fas fa-lock me-2"></i>Finalizar Compra
+                        </button>
+                        <a href="index.html#produtos" class="btn-continue">
+                            <i class="fas fa-arrow-left me-2"></i>Continuar a Comprar
+                        </a>
+
+                        <div class="cart-guarantees">
+                            <div class="guarantee-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Pagamento 100% seguro</span>
+                            </div>
+                            <div class="guarantee-item">
+                                <i class="fas fa-undo"></i>
+                                <span>Devoluções em 30 dias</span>
+                            </div>
+                            <div class="guarantee-item">
+                                <i class="fas fa-truck-fast"></i>
+                                <span>Envio expresso disponível</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sobre Nós</h4>
+                    <ul>
+                        <li><a href="https://www.iptrans.com.pt/centro-qualifica/default.aspx?id_oaudience=3">CENTRO QUALIFICA</a></li>
+                        <li><a href="https://www.livroreclamacoes.pt/Inici">LIVRO DE RECLAMAÇÕES</a></li>
+                        <li><a href="https://www.iptrans.com.pt/institucional/">INSTITUCIONAL</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="https://www.iptrans.com.pt/projetos/">PROJETOS</a></li>
+                        <li><a href="https://www.iptrans.com.pt/parcerias/default.aspx#1">PARCEIROS</a></li>
+                        <li><a href="https://www.iptrans.com.pt/oferta-formativa/default.aspx?id_oaudience=2&id_omodality=6">OFERTA FORMATIVA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="d-flex gap-3 mt-2">
+                        <a href="https://www.bing.com/ck/a?!&&p=886881d19be6be95b8f1397143ea48b4ec11cc4743fe5d7f1109d6b6d00e4a29JmltdHM9MTc3NjkwMjQwMA&ptn=3&ver=2&hsh=4&fclid=22afd85b-cdc4-6b3e-18e9-cf43cc0c6a89&psq=ip+trans+insta+&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9pcHRyYW5zbG91cmVzLw" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="https://www.bing.com/ck/a?!&&p=48235a79d43c1ffd7a2fcf67564e61e239bf09530897a96b387f88a9d9e3db7aJmltdHM9MTc3NjkwMjQwMA&ptn=3&ver=2&hsh=4&fclid=22afd85b-cdc4-6b3e-18e9-cf43cc0c6a89&psq=ip+trans+facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2lwdHJhbnNsb3VyZXMv" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="https://www.bing.com/ck/a?!&&p=34931140ddddf62bba455647282123fe4fd01f9b2a522f5ec1ddfc2bfd32f652JmltdHM9MTc3NjkwMjQwMA&ptn=3&ver=2&hsh=4&fclid=22afd85b-cdc4-6b3e-18e9-cf43cc0c6a89&psq=ip+trans+twiter&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS9pcHRyYW5z" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 IP - TRANS. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/carrinho.js"></script>
+</body>
+</html>

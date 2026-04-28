@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Ip - Trans</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="elemento.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="shortcut icon" href="FavIcon.png" type="image/x-icon">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <div class="login-panel left-panel">
+            <div class="decorative-elements">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+            </div>
+            <div class="panel-content">
+                <h2 class="panel-title">Bem-vindo de Volta!</h2>
+                <p class="panel-text">Para manter-se conectado conosco, faça o login com suas informações pessoais.</p>
+            </div>
+        </div>
+
+        <div class="login-form-wrapper">
+            <div class="form-container">
+                <div class="form-header">
+                    <img src="login.webp" alt="Logo" class="logo-small">
+                    <h1 class="form-title">Acessar Conta</h1>
+                </div>
+
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label class="form-label">E-mail</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope input-icon"></i>
+                            <input type="email" class="form-input" placeholder="seu@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Senha</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-lock input-icon"></i>
+                            <input type="password" class="form-input" placeholder="••••••••" required>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="checkbox-input"> Relembrar
+                        </label>
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                    </div>
+
+                 <button type="submit"  class="btn-login"> <a href="index.html"> ENTRAR </a> </button>
+
+                    <div class="form-divider"><span>OU</span></div>
+
+                    <div class="social-buttons">
+
+
+  <button type="button" class="btn-social">
+    <script src="https://accounts.google.com/gsi/client" async></script>
+    <div id="g_id_onload"
+        data-client_id="YOUR_GOOGLE_CLIENT_ID"
+        data-login_uri="https://your.domain/your_login_endpoint"
+        data-auto_prompt="false">
+    </div>
+    <div class="g_id_signin"
+        data-type="standard"
+        data-size="large"
+        data-theme="outline"
+        data-text="sign_in_with"
+        data-shape="rectangular"
+        data-logo_alignment="left">
+    </div>
+ </button>
+                       <a href="https://www.bing.com/ck/a?!&&p=17fbec15bc72b4db72ce1a25598769d69a262b6aa976078ddbb9cf98cd4a65d4JmltdHM9MTc3NjkwMjQwMA&ptn=3&ver=2&hsh=4&fclid=22afd85b-cdc4-6b3e-18e9-cf43cc0c6a89&psq=iptrans+facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2lwdHJhbnNsb3VyZXMv"> <button type="button" class="btn-social"><i class="fab fa-facebook-f"></i> Facebook</button></a>
+                    </div>
+                </form>
+
+                <div class="form-footer">
+                    Não tens uma conta? <a href="Registro.html" class="link-register">Registre-se agora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

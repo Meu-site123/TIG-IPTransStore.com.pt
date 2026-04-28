@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP - Trans | Sua Loja Digital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="elemento.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="FavIcon.png" alt="Logo" class="navbar-logo">
+                IP - Trans 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contactos.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link btn-hero px-3 ms-lg-3" href="Login.html" style="animation: none; padding: 0.5rem 1.5rem;">Entrar</a></li>
+                         <li class="nav-item"><a class="nav-link btn-hero px-3 ms-lg-3" href="Carrinho.html" style="animation: none; padding: 0.5rem 1.5rem;">Carrinho</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section" id="home">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content container">
+            <h1 class="hero-title">Inovação em cada detalhe.</h1>
+            <p class="hero-subtitle">Descubra a maior coleção de gadgets e tecnologia de ponta com ofertas exclusivas.</p>
+            <a href="#produtos" class="btn-hero">Explorar Produtos</a>
+        </div>
+    </section>
+
+    <section class="search-section">
+        <div class="container">
+            <div class="search-wrapper">
+                <div style="position: relative; flex: 1;">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" id="mainSearch" placeholder="O que você está procurando hoje?">
+                </div>
+                <button class="btn-search">Buscar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos em Destaque -->
+    <section class="products-section" id="produtos">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Produtos em Destaque</h2>
+                <p>Selecionamos o melhor da tecnologia para você</p>
+            </div>
+
+            <!-- UMA ÚNICA GRID COM TODOS OS PRODUTOS -->
+            <div class="products-grid" id="productGrid">
+                
+                <!-- Produto 1: T-Shirt Verde -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">   
+                            <img src="Imagem t - shirt verde.png" alt="T-shirt Verde">
+                        </div>
+                        <span class="product-badge featured">Destaque</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">T-Shirt Verde | IP Trans</h3>
+                        <p class="product-description">Feito de Algodão 100% premium. Conforto garantido.</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(128 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">€ 5,00</span>
+                            <button class="btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Produto 2: T-Shirt Cinza -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">   
+                            <img src="imagem t -shirt cinsa.png" alt="T-shirt Cinza">
+                        </div>
+                        <span class="product-badge featured">Destaque</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">T-Shirt Cinza | IP Trans</h3>
+                        <p class="product-description">Feito de Algodão 100% premium. Conforto garantido.</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(95 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">€ 5,00</span>
+                            <button class="btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Produto 3: T-Shirt Azul -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">   
+                            <img src="imagem t -shit azul.png" alt="T-shirt Azul">
+                        </div>
+                        <span class="product-badge featured">Destaque</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">T-Shirt Azul | IP Trans</h3>
+                        <p class="product-description">Feito de Algodão 100% premium. Conforto garantido.</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(156 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">€ 5,00</span>
+                            <button class="btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Produto 4: T-Shirt Preta -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">   
+                            <img src="imagem t-shirt preta.png" alt="T-shirt Preta">
+                        </div>
+                        <span class="product-badge featured">Destaque</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">T-Shirt Preta | IP Trans</h3>
+                        <p class="product-description">Feito de Algodão 100% premium. Conforto garantido.</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(142 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">€ 5,00</span>
+                            <button class="btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+            </div> <!-- Fecha a products-grid -->
+        </div> <!-- Fecha o container -->
+    </section> <!-- Fecha a products-section -->
+
+    <section class="about-section" id="sobre">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-content">
+                    <h2 class="about-title">Qualidade e Confiança</h2>
+                    <p class="about-text">Nossa missão é democratizar o acesso à tecnologia de ponta, oferecendo suporte especializado e entrega rápida para todo o país.</p>
+                    <ul class="about-features">
+                        <li class="feature-item">
+                            <i class="fas fa-check-circle fa-2x"></i>
+                            <span>Garantia estendida em todos os produtos eletrônicos.</span>
+                        </li>
+                        <li class="feature-item">
+                            <i class="fas fa-truck-fast fa-2x"></i>
+                            <span>Frete grátis para compras acima de 15€.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="floating-card">
+                    <div class="card-stat">
+                        <div class="stat-number" data-target="30">0</div>
+                        <div class="stat-label">Anos de Experiência</div>
+                    </div>
+                    <div class="card-stat">
+                        <div class="stat-number" data-target="250">0</div>
+                        <div class="stat-label">Alunos</div>
+                    </div>
+                    <div class="card-stat">
+                        <div class="stat-number" data-target="25">0</div>
+                        <div class="stat-label">Parcerias</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container cta-content">
+            <h2>Pronto para o futuro?</h2>
+            <p>Assine nossa newsletter e receba descontos exclusivos de até 30%.</p>
+            <a href="#" class="btn-cta">Inscrever-se Agora</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sobre Nós</h4>
+                    <ul>
+                        <li><a href="https://www.iptrans.com.pt/centro-qualifica/default.aspx?id_oaudience=3">CENTRO QUALIFICA</a></li>
+                        <li><a href="https://www.livroreclamacoes.pt/Inici">LIVRO DE RECLAMAÇÕES</a></li>
+                        <li><a href="https://www.iptrans.com.pt/institucional/">INSTITUCIONAL</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="Participantes.html">PARTICIPANTES</a></li>
+                        <li><a href="https://www.iptrans.com.pt/parcerias/default.aspx#1">PARCEIROS</a></li>
+                        <li><a href="https://www.iptrans.com.pt/oferta-formativa/default.aspx?id_oaudience=2&id_omodality=6">OFERTA FORMATIVA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="d-flex gap-3 mt-2">
+                        <a href="https://www.bing.com/ck/a?!&&p=886881d19be6be95b8f1397143ea48b4ec11cc4743fe5d7f1109d6b6d00e4a29JmltdHM9MTc3NjkwMjQwMA&ptn=3&ver=2&hsh=4&fclid=22afd85b-cdc4-6b3e-18e9-cf43cc0c6a89&psq=ip+trans+insta+&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9pcHRyYW5zbG91cmVzLw" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="https://www.bing.com/ck/a?!&&p=48235a79d43c1ffd7a2fcf67564e61e239bf09530897a96b387f88a9d9e3db7aJmltdHM9MTc3NjkwMjQwMA&ptn=3&ver=2&hsh=4&fclid=22afd85b-cdc4-6b3e-18e9-cf43cc0c6a89&psq=ip+trans+facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2lwdHJhbnNsb3VyZXMv" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="https://www.bing.com/ck/a?!&&p=34931140ddddf62bba455647282123fe4fd01f9b2a522f5ec1ddfc2bfd32f652JmltdHM9MTc3NjkwMjQwMA&ptn=3&ver=2&hsh=4&fclid=22afd85b-cdc4-6b3e-18e9-cf43cc0c6a89&psq=ip+trans+twiter&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS9pcHRyYW5z" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 IP - TRANS. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/elemento.js"></script>
+</body>
+</html>
